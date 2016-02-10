@@ -2,10 +2,11 @@
 @addTagHelper "*,Microsoft.AspNet.Mvc.TagHelpers"
 <html>
 <head>
-    <title>Registrera</title>
+    <title>Register</title>
 </head>
 <body>
-    <h1>Register</h1>
+    <h1>Sign upp for membership</h1>
+
     <div asp-validation-summary="ValidationSummary.All"></div>
     <form asp-controller="home" asp-action="registrer">
         <label asp-for="Name"></label>
@@ -21,10 +22,8 @@
         <span asp-validation-for="EMail"></span>
         <br />
         <br /> <br />
-        <input type="submit" value="Confirm" />
+        <input type="submit" value="Confirme" />
         </form>
-
-
 
 </body>
 </html>
