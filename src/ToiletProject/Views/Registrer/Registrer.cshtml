@@ -1,0 +1,29 @@
+﻿@model ToiletProject.ViewModels.RegistrerViewModel
+@addTagHelper "*,Microsoft.AspNet.Mvc.TagHelpers"
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <h1>Sign upp for membership</h1>
+
+    <div asp-validation-summary="ValidationSummary.All"></div>
+    <form asp-controller="home" asp-action="registrer">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+        <br />
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+        <br />
+        <label asp-for="EMail"></label>
+        <input asp-for="EMail" />
+        <span asp-validation-for="EMail"></span>
+        <br />
+        <br /> <br />
+        <input type="submit" value="Confirme" />
+        </form>
+
+</body>
+</html>
