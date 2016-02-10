@@ -15,5 +15,10 @@ namespace ToiletProject.Controllers
         {
             return View();
         }
+
+        public IActionResult LogedIn()
+        {
+            return View();
+        }
     }
 }
