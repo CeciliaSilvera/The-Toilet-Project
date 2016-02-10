@@ -23,6 +23,20 @@ namespace ToiletProject.Controllers
         }
 
         [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(LoginUserViewModel viewModel)
+        {
+            if (!ModelState.IsValid)
+                return View();
+
+            return RedirectToAction("LogedIn");
+        }
+        [HttpGet]
         public IActionResult Registrer()
         {
             return View();
