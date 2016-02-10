@@ -1,1 +1,17 @@
-﻿
+﻿@using ToiletProject
+@model ToiletProject.ViewModels.LogedInViewModel
+@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+<html>
+<head>
+    <script src="~/scripts/jquery.js"></script>
+    <title>on Toilet</title>
+</head>
+<body>
+    <span>User: @Model.UserName</span>
+    
+    <img src="~/animated-light-bulb-image-0019.gif" />"/>
+    <div class="switch-wrapper">
+        <input type="checkbox" value="1" checked>
+    </div>
+</body>
+</html>
