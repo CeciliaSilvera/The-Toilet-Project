@@ -1,0 +1,19 @@
+﻿<h1>Login</h1>
+
+<div asp-validation-summary="ValidationSummary.All"></div>
+
+<form asp-controller="Home" asp-action="create">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+
+    <br />
+
+    <label asp-for="Password"></label>
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span>
+
+    <br />
+
+    <input type="submit" value="Login" />
+</form>
